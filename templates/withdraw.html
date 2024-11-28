@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Withdraw - Banking App{% endblock %}
+{% block content %}
+<h2 class="text-center">Withdraw Money</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="amount" class="form-label">Amount to Withdraw</label>
+        <input type="number" class="form-control" id="amount" name="amount" step="0.01" required>
+    </div>
+    <button type="submit" class="btn btn-warning">Withdraw</button>
+</form>
+{% endblock %}

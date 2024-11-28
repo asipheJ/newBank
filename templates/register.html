@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}Register - Banking App{% endblock %}
+{% block content %}
+<h2 class="text-center">Register</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label for="name" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="surname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="surname" name="surname" required>
+    </div>
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+    </div>
+    <div class="mb-3">
+        <label for="phone_number" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+    </div>
+    <div class="mb-3">
+        <label for="id_number" class="form-label">ID Number</label>
+        <input type="text" class="form-control" id="id_number" name="id_number" required>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+    </div>
+    <div class="mb-3">
+        <label for="confirm_password" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+{% endblock %}

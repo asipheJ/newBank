@@ -1,0 +1,28 @@
+{
+    "6808118750": {
+        "name": "Asiphe",
+        "surname": "Hashe",
+        "username": "asap",
+        "phone_number": "0847852362",
+        "id_number": "9912190258084",
+        "password": "991219",
+        "balance": 960.1,
+        "transaction_history": [
+            {
+                "date": "2024-11-28 21:29:09",
+                "type": "Deposit",
+                "amount": 1000.0
+            },
+            {
+                "date": "2024-11-28 21:29:21",
+                "type": "Deposit",
+                "amount": 10.1
+            },
+            {
+                "date": "2024-11-28 21:29:29",
+                "type": "Withdraw",
+                "amount": 50.0
+            }
+        ]
+    }
+}

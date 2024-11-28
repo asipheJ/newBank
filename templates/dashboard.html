@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard - Banking App{% endblock %}
+{% block content %}
+<h2>Welcome, {{ user_name }} {{ user_surname }}</h2>
+<p>Account Number: {{ account_number }}</p>
+<p>Balance: R{{ balance }}</p>
+<div class="mt-4">
+    <a href="{{ url_for('deposit') }}" class="btn btn-success">Deposit</a>
+    <a href="{{ url_for('withdraw') }}" class="btn btn-warning">Withdraw</a>
+    <a href="{{ url_for('transfer') }}" class="btn btn-primary">Transfer</a>
+</div>
+{% endblock %}

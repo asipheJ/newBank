@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card mx-auto" style="max-width: 600px;">
+    <div class="card-header text-center">
+        <h3>Transfer Money</h3>
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            <div class="mb-3">
+                <label for="recipient_account" class="form-label">Recipient Account Number</label>
+                <input type="text" class="form-control" id="recipient_account" name="recipient_account" required>
+            </div>
+            <div class="mb-3">
+                <label for="amount" class="form-label">Amount (R)</label>
+                <input type="number" class="form-control" id="amount" name="amount" step="0.01" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Transfer</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

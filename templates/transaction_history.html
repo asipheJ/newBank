@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Transaction History - Banking App{% endblock %}
+{% block content %}
+<h2 class="text-center">Transaction History</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Balance</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for transaction in transactions %}
+        <tr>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.type }}</td>
+            <td>R{{ transaction.amount }}</td>
+            <td>R{{ transaction.balance }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
